@@ -2,21 +2,24 @@
 using namespace std;
 int main() 
 {
-int val,n;
-cin >> n;
-long long int sum=0;
-vector<int> array;
-for(int i=0; i<n; i++)
-{
-        cin>>val;
-        sum+=val;
+    long long a[5];
+    long long max=0,min=0;
+    long long sum=0;
+    for(int i=0;i<5;i++){
+        cin >> a[i];
+        sum = sum+a[i];
+        if (a[i]>max)
+        {
+            max=a[i];}
+    }
+    min=a[0];
+    for(int i=0;i<5;i++){
         
-        array.push_back(val);
-}
+        if(a[i]<min)
+        {
+            min=a[i];
+        }
+    }
+    cout<<sum-max<<" "<<sum-min;
 
-        sort(array.begin(), array.end());   
-        
-
-        cout<<sum-array[n-1]<<" "<<sum-array[0];  
-        return 0;
 }
