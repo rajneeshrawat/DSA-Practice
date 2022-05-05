@@ -1,14 +1,12 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 void update(int *a,int *b) {
-    int sum = *a+*b;
-    int sub = *a-*b;
+    int pa = *a+*b;
+    int pb = *a-*b;
     
-    *a=sum;
-    if(sub<0)
-    {sub = -sub;}
-    *b = sub;
-    
+    cout<<pa<<endl;
+    cout<<abs(pb);
         
 }
 
@@ -18,7 +16,7 @@ int main() {
     
     scanf("%d %d", &a, &b);
     update(pa, pb);
-    printf("%d\n%d", a, b);
+    
 
     return 0;
 }
