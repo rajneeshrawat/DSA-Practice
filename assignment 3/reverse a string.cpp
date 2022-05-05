@@ -1,15 +1,18 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
+void reversestr(string &str)
+{
+    int n = str.size();
+    for(int i=0; i<n/2 ; i++ )
+    {
+        swap(str[i], str[n - i - 1]);
+    }
+}
 int main()
 {
-    string a;
-    cin>> a;
-    int n=a.size();
-    for(int i=0;i<=n;i++)
-    {
-        cout<<a[n-i];
-    }
-    return 0;
-    
+   string str;
+   cin >> str;
+   reversestr(str);
+   cout << str;
 }
