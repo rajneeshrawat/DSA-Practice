@@ -1,28 +1,27 @@
 #include<bits/stdc++.h>
-usin namespace std;
-#define int long long 
+using namespace std;
 
-vector<int>Prime;
-void Seive()
-{ int Max= 2e5+5;
- vector<bool>isPrime(Max,1);
- isprime[1]=0;
- for (int i=2;i<Max;i++)
-  { if (!isPrime[i] continue;
-        Prime.push_back(i);
-        for (int j=i*j; j<Max;j+=i) isPrime[j]=0;
-   }
- }
+bool isPrime(int n){
+    if(n<=1){
+       return 0; 
+    }
+    else
+    for (int i=2;i<sqrt(n);i++){
+      if (n%i==0){
+            return 0;
+        }
+    }
+    return 1;
+    
+}
+int main() {
+    int p;
+    cin>>p;
+    if (isPrime(p)==0){
+        cout<<"not prime";
         
-        signed main() 
-        {
-          Seive ();
-          for(int a: Prime)
-          {
-            cout<<a<<" ";
-            if (a>100)
-            {
-              break;
-            }
-          }
-        }   
+    }
+    else {
+        cout<<"prime";
+    }
+}
