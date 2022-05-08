@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int gcd (int a,int b)
+int hcf (int a,int b)
 {
     if (b>a)
     {
@@ -19,6 +19,6 @@ int main()
 {
     int s,t ;
     cin >> s >> t;
-    cout << gcd(s,t);
+    cout << hcf(s,t);
     return 0;
 }
