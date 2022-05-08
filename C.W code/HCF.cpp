@@ -17,8 +17,8 @@ int hcf (int a,int b)
 }
 int main()
 {
-    int s,t ;
-    cin >> s >> t;
-    cout << hcf(s,t);
+    int x,y ;
+    cin >> x>> y;
+    cout << hcf(x,y);
     return 0;
 }
