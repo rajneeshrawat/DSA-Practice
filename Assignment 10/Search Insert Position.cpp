@@ -1,13 +1,13 @@
 class Solution {
 public:
-    int searchInsert(vector<int>& a, int target)
+    int searchInsert(vector<int>& A, int target)
     {
        
-    for(int i = 0 ; i < a.size() ; i++)
+    for(int i = 0 ; i < A.size() ; i++)
     {
-        if(a[i] >= target)
+        if(A[i] >= target)
             return i;
     }
-    return a.size(); 
+    return A.size(); 
     }
 };
