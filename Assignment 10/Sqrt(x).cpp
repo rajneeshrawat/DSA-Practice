@@ -1,10 +1,7 @@
 class Solution {
 public:
-    int mySqrt(int x) 
-    {
-        if (x<=1)
-        {
-            return x;
+    int Sqrt(int x){ 
+          return x;
         }
         else
         {
