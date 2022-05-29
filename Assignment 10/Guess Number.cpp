@@ -2,24 +2,24 @@ class Solution {
 public:
     int guessNumber(int n) 
     {
-        int pick;
+        int p;
         int low=1;
         int high=n ;
         while(low<=high)
         {
-            int pick =(low+(high-low)/2);
-            if(guess(pick)==0)
+            int p =(low+(high-low)/2);
+            if(guess(p)==0)
             {
-                return pick;
+                return p;
             }
-            else if (guess(pick)==1)
+            else if (guess(p)==1)
                 
             {
-                low=pick+1;
+                low=p+1;
             }
             else 
             {
-                high=pick-1;
+                high=p-1;
             }
         }
         return 0;
