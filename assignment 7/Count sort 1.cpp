@@ -7,9 +7,9 @@ string rtrim(const string &);
 vector<string> split(const string &);
 
 vector<int> countingSort(vector<int> A) {
-
-vector<int> B(100);
-for(int i=0;i<A.size();i++){
+int m = A.size();
+vector<int> B(100,0);
+for(int i=0;i<m;i++){
     B[A[i]]++;
 }
 
