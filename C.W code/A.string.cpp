@@ -3,7 +3,6 @@
      
     string add(string a, string b){\
     	string sum = "";
-    	//complete the funcution;
         return sum;
     }
     int main() {
