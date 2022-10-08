@@ -7,14 +7,12 @@ class Queue{
 	int end;
  
 	public:
-	//constructor is called whenever an object of the class is declared
+	
 	Queue(){
 		start=0;
 		end=0;
 		cout<<"constructor is Called\n";
 	}
- 
-	//push the value at the back
 	void push(int val){
 		A[end]=val;
 		end++;
@@ -52,7 +50,7 @@ class Queue{
 };
  
 int main() {
-	Queue q; //constructor is called on this line
+	Queue q; 
 	q.push(4);
 	cout<<"front: "<<q.front()<<"\n";
 	q.pop();
